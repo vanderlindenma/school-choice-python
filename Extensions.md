@@ -24,3 +24,7 @@ The trick is again to create a special school `School(0,...,...)`. Again, being 
 2. Add `School(0,...,...)` in student's preferences depending on the constraint you want to implement. For instance, if you want to allow all students to only report the ranking over `x` school, place `School(0,...,...)` ** right after the `x`-th school in every students' preference list**.
 3. Run `DASolver.py` of `IASolver.py`. Every student who end up assigned to school 0 has been rejected by all of its first `x` ranked schools and should therefore be viewed as unassigned.
 
+# References
+
+* Abdulkadiroglu, Atila, and Tayfun Sönmez. "School choice: A mechanism design approach." The American Economic Review 93.3 (2003): 729-747.
+* Haeringer, Guillaume, and Flip Klijn. "Constrained school choice." Journal of Economic Theory 144.5 (2009): 1921-1947.
