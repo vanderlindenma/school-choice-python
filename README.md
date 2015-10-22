@@ -18,3 +18,4 @@ The main scripts in this repository are
 # References
 
 * Abdulkadiroglu, Atila, and Tayfun Sönmez. "School choice: A mechanism design approach." The American Economic Review 93.3 (2003): 729-747.
+* Haeringer, Guillaume, and Flip Klijn. "Constrained school choice." Journal of Economic Theory 144.5 (2009): 1921-1947.
