@@ -1,6 +1,6 @@
 # school_choice_python
 
-This repository contains Python code to compute assignments for school choice problems [Abdulkadiroglu and Sönmez (2003)](https://scholar.google.com/scholar?cluster=8496416599183251074&hl=en&as_sdt=0,43&as_vis=1) according to different assignment procedures. It uses and modigy code from Jeremy Kun, stable-marriage, (2014), GitHub repository, https://github.com/j2kun/stable-marriages, described in one of Jeremy's blog posts at http://jeremykun.com/2014/04/02/stable-marriages-and-designing-markets/.
+This repository contains Python code to compute assignments for school choice problems [Abdulkadiroglu and Sönmez (2003)](https://scholar.google.com/scholar?cluster=8496416599183251074&hl=en&as_sdt=0,43&as_vis=1) according to different assignment procedures. It uses and modifies code from Jeremy Kun, stable-marriage, (2014), GitHub repository, https://github.com/j2kun/stable-marriages, described in one of Jeremy's blog posts at http://jeremykun.com/2014/04/02/stable-marriages-and-designing-markets/.
 
 # Features
 
