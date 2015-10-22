@@ -3,6 +3,7 @@
 This tutorial describes how to use `DASolver.py` and `IASolver.py` in settings where
   * The total number of seats in all the schools is smaller than the total number of students, and some students end up unassigned.
   * The school choice procedure are [constrained](https://scholar.google.be/scholar?cluster=16748092764273030035&hl=en&as_sdt=0,43) in the sense that students can only rank a subset of schools.
+  * Some schools are not acceptable to some students.
 
 # Allowing for unassigned students
 
@@ -23,6 +24,14 @@ The trick is again to create a special school `School(0,...,...)`. Again, being 
 1. Endow `School(0,...,...)` with an arbitrarilly large number of seats, larger than the total number of students. For instance, if you have 100 students, set `School(0,...,200)`. 
 2. Add `School(0,...,...)` in student's preferences depending on the constraint you want to implement. For instance, if you want to allow all students to only report the ranking over `x` school, place `School(0,...,...)` ** right after the `x`-th school in every students' preference list**.
 3. Run `DASolver.py` of `IASolver.py`. Every student who end up assigned to school 0 has been rejected by all of its first `x` ranked schools and should therefore be viewed as unassigned.
+
+# Unacceptable Schools
+
+A similar trick allows to model students for which some schools are *unacceptable*, meaning they prefer being unassigned to being assigned to some schools.
+
+1. Endow `School(0,...,...)` with an arbitrarilly large number of seats, larger than the total number of students. For instance, if you have 100 students, set `School(0,...,200)`. 
+2. Add `School(0,...,...)` in student's preferences ** right after the students' last acceptable school**.
+3. Run `DASolver.py` of `IASolver.py`. Every student who end up assigned to school 0 has been rejected by all of its acceptable schools and should therefore be viewed as unassigned.
 
 # References
 
