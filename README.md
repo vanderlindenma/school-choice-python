@@ -11,6 +11,7 @@ The main scripts in this repository are
 * `Extensions.md`: describes how to use `DASolver.py` and `IASolver.py` in settings where
   * The total number of seats in all the schools is smaller than the total number of students, and some students end up unassigned.
   * The school choice procedure are [constrained](https://scholar.google.be/scholar?cluster=16748092764273030035&hl=en&as_sdt=0,43) in the sense that students can only rank a subset of schools.
+  * Some schools are not acceptable to some students.
 
 
 
