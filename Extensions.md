@@ -22,7 +22,7 @@ Again, neither `DASolver.py` nor `IASolver.py` are per se per se able to deal wi
 The trick is again to create a special school `School(0,...,...)`. Again, being assigned to `School(0,...,...)` will be interpreted as being unassigned. However, this time, you will use the location of `School(0,...,...)` in student's preferences in order to implement the desired constraint.
 
 1. Endow `School(0,...,...)` with an arbitrarilly large number of seats, larger than the total number of students. For instance, if you have 100 students, set `School(0,...,200)`. 
-2. Add `School(0,...,...)` in student's preferences depending on the constraint you want to implement. For instance, if you want to allow all students to only report the ranking over `x` school, place `School(0,...,...)` ** right after the `x`-th school in every students' preference list**.
+2. Add `School(0,...,...)` in student's preferences depending on the constraint you want to implement. For instance, if you want to allow all students to only report the ranking over `x` school, place `School(0,...,...)` **right after the `x`-th school in every students' preference list**.
 3. Run `DASolver.py` of `IASolver.py`. Every student who end up assigned to school 0 has been rejected by all of its first `x` ranked schools and should therefore be viewed as unassigned.
 
 # Unacceptable Schools
@@ -30,7 +30,7 @@ The trick is again to create a special school `School(0,...,...)`. Again, being 
 A similar trick allows to model students for which some schools are *unacceptable*, meaning they prefer being unassigned to being assigned to some schools.
 
 1. Endow `School(0,...,...)` with an arbitrarilly large number of seats, larger than the total number of students. For instance, if you have 100 students, set `School(0,...,200)`. 
-2. Add `School(0,...,...)` in student's preferences ** right after the students' last acceptable school**.
+2. Add `School(0,...,...)` in student's preferences **right after the students' last acceptable school**.
 3. Run `DASolver.py` of `IASolver.py`. Every student who end up assigned to school 0 has been rejected by all of its acceptable schools and should therefore be viewed as unassigned.
 
 # References
