@@ -19,7 +19,7 @@ The trick to allow for unassigned students is to create a special school, say `S
 
 Again, neither `DASolver.py` nor `IASolver.py` are per se per se able to deal with constrained school choice problem. However, a trick similar to the one described in the former section allows to use `DASolver.py` nor `IASolver.py` to solve constrained school choice problems.
 
-The trick is again to create a special school `School(0,...,...)`. Again, being assigned to `School(0,...,...)` will be interpreted as being unassigned. However, this time, you will use the location of `School(0,...,...)` in student's preferences in order to implement the desired constraint.
+The trick is again to create a special school `School(0,...,...)`. Being assigned to `School(0,...,...)` will be interpreted as being unassigned. However, this time, you will use the location of `School(0,...,...)` in student's preferences in order to implement the desired constraint.
 
 1. Endow `School(0,...,...)` with an arbitrarilly large number of seats, larger than the total number of students. For instance, if you have 100 students, set `School(0,...,200)`. 
 2. Add `School(0,...,...)` in student's preferences depending on the constraint you want to implement. For instance, if you want to allow all students to only report the ranking over `x` school, place `School(0,...,...)` **right after the `x`-th school in every students' preference list**.
